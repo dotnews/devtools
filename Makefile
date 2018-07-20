@@ -1,9 +1,6 @@
-default: dev
+default: link
 
-.PHONY: dev link pull
-
-dev:
-	@docker-compose up
+.PHONY: link pull
 
 link:
 	@ln -s $(PWD)/.editorconfig ../.editorconfig
